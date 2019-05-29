@@ -5,6 +5,7 @@ import store from '../store/index.js'
 import Login from 'components/login/Login.vue'
 import Home from 'components/home/Home.vue'
 import Earn from 'components/earn/index.vue'
+import Save from 'components/save/index.vue'
 import Me from 'components/me/index.vue'
 
 import "../assets/styles/reset.scss"
@@ -43,6 +44,14 @@ const router = new Router({
       component: Earn
     },
     {
+      path: '/save',
+      name: 'Save',
+      meta: {
+        requireAuth: true
+      },
+      component: Save
+    },
+    {
       path: '/me',
       name: 'Me',
       meta: {
@@ -65,10 +74,11 @@ router.beforeEach( (to, from, next) => {
     if(store.state.token) {
       next()
     } else {
-      next({
+      /*next({
         path: "/login",
         query: {redirect: to.fullPath}
-      })
+      })*/
+      next()
     }
   }else{
     next()

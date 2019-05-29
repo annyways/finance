@@ -5,8 +5,6 @@
         <img :src="item.img" alt="">
         <h4>{{item.title}}</h4>
       </router-link>
-
-
     </div>
   </section>
 </template>

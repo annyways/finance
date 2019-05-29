@@ -2,7 +2,9 @@
   <div :class="$style.earn">
     <Heador/>
     <eslider/>
+    <enters/>
     <Mission :items="missionData"/>
+    <Ads/>
     <NavBar/>
   </div>
 
@@ -15,7 +17,9 @@ import Heador from "public/Header.vue";
 import NavBar from "public/navBar.vue";
 
 import Eslider from './eslider.vue'
+import Enters from './enters.vue'
 import Mission from "../home/mission.vue";
+import Ads from "./ads.vue";
 
 
 export default {
@@ -27,7 +31,9 @@ export default {
   components: {
     Heador,
     Eslider,
+    Enters,
     Mission,
+    Ads,
     NavBar
   },
   methods: {
@@ -45,4 +51,7 @@ export default {
 </script>
 
 <style lang="scss" module>
+.earn{
+  background: #f5f5f5;
+}
 </style>

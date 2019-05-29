@@ -36,7 +36,7 @@ export default {
 .eslider{
   margin-top: 100px;
   .nut-swiper{
-    height: 300px;
+    height: 300px !important;
   }
 }
 </style>

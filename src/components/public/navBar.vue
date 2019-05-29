@@ -2,7 +2,6 @@
   <div :class="$style.navBar">
     <ul :class="$style.content">
       <li :class="$style.item" v-for="item in items" :key="item.title">
-
         <router-link :to="item.url">
           <img :src="item.img" alt=""/>
           <h4>{{item.title}}</h4>
@@ -17,7 +16,6 @@ export default {
   data() {
     return {
       items:[
-
         {
           title:"首页",
           url:'/home',
@@ -30,13 +28,8 @@ export default {
         },
         {
           title:"借钱",
-          url:'/',
+          url:'/save',
           img: "https://img12.360buyimg.com/jrpmobile/jfs/t1/9698/36/4230/594/5bda5919Ec55e200a/dd949177311f04e7.png?width=60&height=60"
-        },
-        {
-          title:"省钱",
-          url:'/',
-          img: "https://img12.360buyimg.com/jrpmobile/jfs/t1/4948/14/14022/816/5bda5924Eb28b0d4c/fde0775f7c0e197d.png?width=60&height=60"
         },
         {
           title:"我的",
