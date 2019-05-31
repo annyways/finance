@@ -12,6 +12,7 @@
 
 <script>
 import axios from "axios"
+import {mapMutations} from "vuex"
 
 import Heador from "public/Header.vue";
 import NavBar from "public/navBar.vue";
@@ -38,14 +39,16 @@ export default {
   },
   methods: {
     getInfo(data, callback) {
-      axios.get('/mockapi/home.json').then( (res) => {
+      axios.get('/api/home.json').then( (res) => {
         let homeData = JSON.parse(JSON.stringify(res.data));
         this.missionData = homeData.mission;
       });
-    }
+    },
+    ...mapMutations(["headtitle"])
   },
   mounted() {
-    this.getInfo();
+    this.getInfo()
+    this.headtitle("赚钱")
   }
 }
 </script>

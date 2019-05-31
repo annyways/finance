@@ -44,7 +44,7 @@ export default {
         return
       }
       let param = "?username="+this.username+"&password="+this.password;
-      axios.get("/mockapi/signin.js"+param).then( (res)=> {
+      axios.get("/api/signin.js"+param).then( (res)=> {
         if(res.data) {
           this.recordUser({username:this.username})
           this.login("58392e427bf2a0865f2a18781eb3a39ad5f25504")
@@ -54,12 +54,15 @@ export default {
 
     },
 
-    ...mapMutations(["recordUser","login"])
+    ...mapMutations(["recordUser","login","headtitle"])
   },
   computed: {
     isEnable() {
       return  (this.username.length>0) && (this.password.length>0)
     }
+  },
+  mounted() {
+    this.headtitle("登录")
   }
 }
 </script>

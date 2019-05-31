@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import {mapMutations} from "vuex"
+
 import Heador from "public/Header.vue";
 import NavBar from "public/navBar.vue";
 
@@ -20,6 +22,12 @@ export default {
     Channels,
     Personal,
     NavBar
+  },
+  methods: {
+    ...mapMutations(["headtitle"])
+  },
+  mounted() {
+    this.headtitle("金融会员")
   }
 }
 </script>

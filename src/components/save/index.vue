@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import {mapMutations} from "vuex"
+
 import Heador from "public/Header.vue";
 import NavBar from "public/navBar.vue";
 
@@ -17,6 +19,12 @@ export default {
     Heador,
     NavBar,
     Car
+  },
+  methods: {
+    ...mapMutations(["headtitle"])
+  },
+  mounted() {
+    this.headtitle("借钱")
   }
 }
 </script>

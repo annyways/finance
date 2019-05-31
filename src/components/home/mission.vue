@@ -38,7 +38,7 @@ export default {
 .panel{
   @include panel;
   .item{
-    width:250px !important;
+    width:220px !important;
     height: auto;
     margin-right: 24px;
     .itemImg{

@@ -7,6 +7,7 @@ import Home from 'components/home/Home.vue'
 import Earn from 'components/earn/index.vue'
 import Save from 'components/save/index.vue'
 import Me from 'components/me/index.vue'
+import NotFound from 'components/public/notFound.vue'
 
 import "../assets/styles/reset.scss"
 
@@ -60,6 +61,11 @@ const router = new Router({
       component: Me
     },
     {
+      path: '/404',
+      name: 'notFound',
+      component: NotFound
+    },
+    {
       path: "*",
       redirect: "/404"
     }
@@ -74,11 +80,11 @@ router.beforeEach( (to, from, next) => {
     if(store.state.token) {
       next()
     } else {
-      /*next({
+      next({
         path: "/login",
         query: {redirect: to.fullPath}
-      })*/
-      next()
+      })
+      //next()
     }
   }else{
     next()

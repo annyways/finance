@@ -16,6 +16,7 @@
 
 <script>
 import axios from "axios"
+import {mapMutations} from "vuex"
 
 import Heador from "public/Header.vue";
 import NavBar from "public/navBar.vue";
@@ -49,7 +50,7 @@ export default {
   },
   methods: {
     getHomeInfo(data, callback) {
-      axios.get('/mockapi/home.json').then( (res) => {
+      axios.get('api/home.json').then( (res) => {
         let homeData = JSON.parse(JSON.stringify(res.data));
         this.entersData = homeData.enters;
         this.choiceData = homeData.choice.items;
@@ -57,10 +58,12 @@ export default {
         this.insuranceData = homeData.insurance;
         this.newData = homeData.new;
       });
-    }
+    },
+    ...mapMutations(["headtitle"])
   },
   mounted() {
-    this.getHomeInfo();
+    this.getHomeInfo()
+    this.headtitle("京东金融")
   }
 }
 </script>

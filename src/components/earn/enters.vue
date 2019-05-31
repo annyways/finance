@@ -4,7 +4,7 @@
         <img :src="item.img" alt="">
         <h4>{{item.title}}</h4>
     </div>
-    <div class="$style.ad">
+    <div :class="$style.ad">
       <img src="https://img12.360buyimg.com/jrpmobile/jfs/t1/63259/11/578/59388/5cec92e4E953e94da/8bd2e0a7bce47f38.jpg?width=750&height=200" alt="">
       <img src="https://img12.360buyimg.com/jrpmobile/jfs/t1/54430/7/1152/31787/5cee32fdE48ba90c6/de76eb0cda423436.jpg?width=750&height=200" alt="">
     </div>
@@ -33,7 +33,6 @@ export default {
 .enters{
   @include list(row);
   background: #fff;
-  margin-top: 120px;
   padding: 20px 0;
   justify-content: space-around;
   a{text-decoration: none;}

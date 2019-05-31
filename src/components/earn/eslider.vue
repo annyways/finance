@@ -34,9 +34,11 @@ export default {
 
 <style lang="scss" module>
 .eslider{
-  margin-top: 100px;
-  .nut-swiper{
-    height: 300px !important;
-  }
+  margin-top: 80px;
 }
+</style>
+<style lang="scss">
+  .nut-swiper{
+    height: auto;
+  }
 </style>

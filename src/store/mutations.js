@@ -11,5 +11,8 @@ export default {
   [types.LOGOUT]: (state, data) => {
     localStorage.removeItem("token")
     state.token = null
+  },
+  [types.HEADTITLE]: (state, data) => {
+    state.headtitle = data
   }
 }

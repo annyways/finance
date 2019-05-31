@@ -1,7 +1,7 @@
 <template lang="html">
   <section :class="$style.enters">
     <div :class="$style.item" v-for="item in items" :key="item.img">
-      <router-link :to="{ name: item.href }">
+      <router-link :to="item.href">
         <img :src="item.img" alt="">
         <h4>{{item.title}}</h4>
       </router-link>

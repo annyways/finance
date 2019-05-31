@@ -1,1 +1,94 @@
-{"choice":{"items":[{"title":"定期理财","sub":"理财首选","rate":"5.60%","text":"历史年化回报率"},{"title":"小白理财","sub":"理财首选","rate":"4.22%","text":"7日年化收益率"},{"title":"月月盈","sub":"养老保障","rate":"5%","text":"七日年化收益率"},{"title":"小白基金","sub":"天天赚钱","rate":"4.27%","text":"7日年化收益率"}]}}
+{
+	"choice": {
+		"items": [{
+			"title": "定期理财",
+			"sub": "理财首选",
+			"rate": "5.60%",
+			"text": "历史年化回报率"
+		}, {
+			"title": "小白理财",
+			"sub": "理财首选",
+			"rate": "4.22%",
+			"text": "7日年化收益率"
+		}, {
+			"title": "月月盈",
+			"sub": "养老保障",
+			"rate": "5%",
+			"text": "七日年化收益率"
+		}, {
+			"title": "小白基金",
+			"sub": "天天赚钱",
+			"rate": "4.27%",
+			"text": "7日年化收益率"
+		}]
+	},
+	"mission": [{
+		"id": "0001",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t26893/316/1416172900/5740/58f20b1e/5bc82e3aN7aa90a89.png?width=210&height=260"
+	}, {
+		"id": "0002",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t26767/72/1365822552/8516/2e071d95/5bc82e6eN0be93809.png?width=210&height=260"
+	}, {
+		"id": "0003",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t27040/190/1395454031/8316/d3d74de2/5bc82eb2N34a7625d.png?width=210&height=260"
+	}, {
+		"id": "0004",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t26182/297/1417522782/7864/19181a3b/5bc82ec0N0824153d.png?width=210&height=260"
+	}],
+	"insurance": [{
+		"id": "0001",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/19965/4/1946/28370/5c18958aE9e8a930d/9810bed7979e6bd5.jpg?width=210&height=260"
+	}, {
+		"id": "0002",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/27283/39/2034/26756/5c1895b5Ecbfdf7ed/6a0755f1f40e2eb9.jpg?width=210&height=260"
+	}, {
+		"id": "0003",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/27014/35/2022/24897/5c1895d9Ef095679a/c0918d244bbfb2e5.jpg?width=210&height=260"
+	}, {
+		"id": "0004",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/19150/30/2037/31576/5c1895f2Eb431149e/7a71e063250f8b0d.jpg?width=210&height=260"
+	}],
+	"new": [{
+		"id": "0001",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/30149/40/8970/20149/5ca2e84dE7641a4dc/342b926b8582a140.jpg?width=335&height=421"
+	}, {
+		"id": "0002",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/19514/33/13824/16597/5ca2e84eE4b9cc39a/23b319b8846b585c.png?width=335&height=421"
+	}, {
+		"id": "0003",
+		"url": "https://img12.360buyimg.com/jrpmobile/jfs/t1/12202/17/13916/19329/5ca2e84fE6bde713f/ff4f3231eb4c7312.jpg?width=335&height=421"
+	}],
+	"enters": [{
+		"href": "/yhq",
+		"img": "//img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132",
+		"title": "优惠券"
+	}, {
+		"href": "/lfl",
+		"img": "//img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132",
+		"title": "领福利"
+	}, {
+		"href": "/qgb",
+		"img": "//img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png?width=132&height=132",
+		"title": "抢钢镚"
+	}, {
+		"href": "/bt",
+		"img": "//img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135",
+		"title": "白条提额"
+	}, {
+		"href": "/earn",
+		"img": "https://img12.360buyimg.com/jrpmobile/jfs/t1/520/34/950/3686/5b9239e3Eaaf5465c/8d8c35badacfc114.png?width=90&height=90",
+		"title": "工资理财"
+	}, {
+		"href": "/earn",
+		"img": "https://img12.360buyimg.com/jrpmobile/jfs/t1/1216/39/659/4516/5b923b1cE5943d1c6/dabaf8b842f57eb9.png?width=90&height=90",
+		"title": "众筹"
+	}, {
+		"href": "/earn",
+		"img": "https://img12.360buyimg.com/jrpmobile/jfs/t1/36242/13/119/12214/5cb06492E0c73a66f/a284f91242e27af1.png?width=90&height=90",
+		"title": "免费领京豆"
+	}, {
+		"href": "home",
+		"img": "https://img12.360buyimg.com/jrpmobile/jfs/t1/23337/6/15445/8974/5cb064c2E0cadac1d/c533bfe4da578fe7.png?width=90&height=90",
+		"title": "免息红包"
+	}]
+}
